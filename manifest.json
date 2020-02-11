@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "ceskatelevize.cz subtitles translator",
+  "version": "1.0",
+
+  "description": "Add links to Lingea online dictionary and Google Translate in the subtitles on ceskatelevize.cz and automatically update the Google Translate window.",
+
+  "icons": {
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.ceskatelevize.cz/ivysilani/*"],
+      "js": ["cstvsubs.js"]
+    }
+  ]
+
+}
